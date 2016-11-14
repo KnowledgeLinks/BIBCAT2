@@ -102,7 +102,8 @@ def setup(args={}):
     # load default data into the server core
     ctx = app.test_request_context('/')
     with ctx:
-        rdfw().load_default_data()
+        pass
+        #rdfw().load_default_data()
 
 def main(args):
     if cbool(args.get("setup_only")):

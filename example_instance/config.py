@@ -12,10 +12,14 @@ ES_URL = "http://localhost:9200"
 # Dictionary of web accessibale datasets
 DATASET_URLS = {
     "loc_subjects_skos.nt.gz": "http://id.loc.gov/static/data/authoritiessubjects.nt.skos.gz",
-    "marc_relatoes_nt": "http://id.loc.gov/static/data/vocabularyrelators.nt.zip",
+    "marc_relators_nt": "http://id.loc.gov/static/data/vocabularyrelators.nt.zip",
     "bibframe_vocab_rdf": "http://id.loc.gov/ontologies/bibframe.rdf"
 }
 DEFAULT_RDF_NS = {
+    "marc21": "http://knowledgelinks.io/ns/marc21/",
+    "pcdm": "<http://pcdm.org/models#>",
+    "relators": "<http://id.loc.gov/vocabulary/relators/>",
+    "bd": "<http://www.bigdata.com/rdf#>",
     "kds": "http://knowledgelinks.io/ns/data-structures/",
     "kdr": "http://knowledgelinks.io/ns/data-resources/",
     "bf": "http://id.loc.gov/ontologies/bibframe/",
@@ -32,7 +36,8 @@ DEFAULT_RDF_NS = {
     "dc": "http://purl.org/dc/elements/1.1/",
     "dbo": "http://dbpedia.org/ontology/",
     "dbp": "http://dbpedia.org/property/",
-    "dbr": "http://dbpedia.org/resource/"
+    "dbr": "http://dbpedia.org/resource/",
+    "acl": "http://www.w3.org/ns/auth/acl#"
 }
 # this is the graph name where application definitions are stored
 RDF_DEFINITION_GRAPH = "<http://knowledgelinks.io/ns/application-framework/>"
